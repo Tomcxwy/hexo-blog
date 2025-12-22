@@ -1,6 +1,7 @@
 ---
 title: Hello World
 excerpt: 第一次哦
+date: 2025-12-22 15:47:38
 #如果想把某些文章隐藏，不在首页和其他归档分类页里展示
 hide: false 
 #如果只是想让文章在首页隐藏，但仍需要在归档分类页里展示
@@ -10,11 +11,11 @@ archive: false
 #当文章设置了 sticky 后，主题会默认在首页文章标题前增加一个图标，来标识这是一个置顶文章，可以通过主题配置去关闭或修改这个功能
 sticky: 100
 #文章在首页的封面图
-index_img: /img/default.png
+index_img: /img/hello-world.png
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+## 快速开始
 
 ### Create a new post
 
@@ -24,7 +25,7 @@ $ hexo new "My New Post"
 
 More info: [Writing](https://hexo.io/docs/writing.html)
 
-### Run server
+### 启动服务
 
 ``` bash
 $ hexo server
@@ -32,7 +33,7 @@ $ hexo server
 
 More info: [Server](https://hexo.io/docs/server.html)
 
-### Generate static files
+### 生成静态文件
 
 ``` bash
 $ hexo generate

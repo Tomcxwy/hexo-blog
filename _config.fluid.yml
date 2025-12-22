@@ -233,14 +233,19 @@ font:
 
 # 指定自定义 .js 文件路径，支持列表；路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js
 # Specify the path of your custom js file, support list. The path is relative to the source directory, such as `/js/custom.js` corresponding to the directory `source/js/custom.js`
+# 1. 外部脚本放入 custom_js，确保它们在全局作用域加载
 custom_js:
   - https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
   - https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js
+
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
+# 2. 外部样式放入 custom_css
 custom_css:
   - https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
+
 # 在页面底部注入播放器所需的资源
+# 3. custom_html 只保留播放器载体，且我们需要给它增加一层防销毁处理
 custom_html: |
   <meting-js
     server="netease"
@@ -248,16 +253,13 @@ custom_html: |
     id="2829883282"
     fixed="true"
     mini="true"
-    autoplay="false"
+    autoplay="true"
     theme="#29d"
     list-folded="true"
-    volume="0.5">
+    volume="0.5"
+    order="random"      # <--- 添加这一行实现随机播放
+    loop="all"          # 建议同时设置循环模式为全部循环>
   </meting-js>
-
-# 局部刷新 (Pjax)
-# 开启后可以加速页面跳转，并且使音乐播放器等组件在跳转页面时不断流
-pjax:
-  enable: true
 
 # 网页访问统计
 # Analysis of website visitors
@@ -465,11 +467,12 @@ open_graph:
 footer:
   # 页脚第一行文字的 HTML，建议保留 Fluid 的链接，用于向更多人推广本主题
   # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
-  content: '
-    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
-    <i class="iconfont icon-love"></i>
-    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
-  '
+#  content: '
+#    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+#    <i class="iconfont icon-love"></i>
+#    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+#  '
+  content:
 
   # 展示网站的 PV、UV 统计数
   # Display website PV and UV statistics
