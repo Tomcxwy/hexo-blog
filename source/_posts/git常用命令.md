@@ -1,7 +1,8 @@
 ---
 title: git常用命令
 date: 2025-12-22 15:44:00
-tags:
+tag:
+excerpt: 一些git的常用命令
 ---
 # Git的一些常用命令
 
