@@ -3,6 +3,7 @@ title: conda常用命令
 date: 2025-12-22 15:34:33
 tags:
 excerpt: 一些conda的常用命令
+index_img: /img/conda.png
 ---
 # 环境管理
 
