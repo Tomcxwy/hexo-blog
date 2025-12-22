@@ -65,6 +65,6 @@ CMD ["sh", "-c", "java -jar /app/app.jar --server.port=${PORT}"]
 
 将前端请求路径由原本的本地路径改为网络请求路径
 
-![image-20251115003258479](cloudflare-tuunel挂载/image-20251115003258479.png)
+![image-20251115003258479](部署Springboot-Vue项目/image-20251115003258479.png)
 
 如果第一次请求超时，可以将timeout的时间拉长，因为第一部署的springboot请求比较慢，后续可以改回来。
