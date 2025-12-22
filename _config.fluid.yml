@@ -234,10 +234,30 @@ font:
 # 指定自定义 .js 文件路径，支持列表；路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js
 # Specify the path of your custom js file, support list. The path is relative to the source directory, such as `/js/custom.js` corresponding to the directory `source/js/custom.js`
 custom_js:
-
+  - https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
+  - https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
 custom_css:
+  - https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
+# 在页面底部注入播放器所需的资源
+custom_html: |
+  <meting-js
+    server="netease"
+    type="playlist"
+    id="2829883282"
+    fixed="true"
+    mini="true"
+    autoplay="false"
+    theme="#29d"
+    list-folded="true"
+    volume="0.5">
+  </meting-js>
+
+# 局部刷新 (Pjax)
+# 开启后可以加速页面跳转，并且使音乐播放器等组件在跳转页面时不断流
+pjax:
+  enable: true
 
 # 网页访问统计
 # Analysis of website visitors
@@ -454,7 +474,7 @@ footer:
   # 展示网站的 PV、UV 统计数
   # Display website PV and UV statistics
   statistics:
-    enable: false
+    enable: true
 
     # 统计数据来源，使用 leancloud, umami 需要设置 `web_analytics` 中对应的参数；使用 busuanzi 不需要额外设置，但是有时不稳定，另外本地运行时 busuanzi 显示统计数据很大属于正常现象，部署后会正常
     # Data source. If use leancloud, umami, you need to set the parameter in `web_analytics`
@@ -506,11 +526,12 @@ index:
     # 通过 API 接口作为首页副标题的内容，必须返回的是 JSON 格式，如果请求失败则按 text 字段显示，该功能必须先开启 typing 打字机功能
     # Subtitle of the homepage through the API, must be returned a JSON. If the request fails, it will be displayed in `text` value. This feature must first enable the typing animation
     api:
-      enable: false
+      enable: true
 
       # 请求地址
       # Request url
-      url: ""
+      url: "https://v1.hitokoto.cn/"
+#      url: ""
 
       # 请求方法
       # Request method
@@ -523,7 +544,8 @@ index:
 
       # 从请求结果获取字符串的取值字段，最终必须是一个字符串，例如返回结果为 {"data": {"author": "fluid", "content": "An elegant theme"}}, 则取值字段为 ['data', 'content']；如果返回是列表则自动选择第一项
       # The value field of the string obtained from the response. For example, the response content is {"data": {"author": "fluid", "content": "An elegant theme"}}, the expected `keys: ['data','content']`; if the return is a list, the first item is automatically selected
-      keys: []
+#      keys: []
+      keys: ["hitokoto"]
 
   # 自动截取文章摘要
   # Auto extract post
@@ -560,7 +582,7 @@ post:
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
-  default_index_img:
+  default_index_img: /img/default.png
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -598,7 +620,7 @@ post:
     # 浏览量计数
     # Number of visits
     views:
-      enable: false
+      enable: true
       # 统计数据来源
       # Data Source
       # Options: busuanzi | leancloud | umami
@@ -607,7 +629,7 @@ post:
   # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
   # Update date is displayed at the beginning of the post. The default date is the update date of the md file, which can be manually specified by `updated` in front-matter (same format as date)
   updated:
-    enable: false
+    enable: true
 
     # 格式参照 ISO-8601 日期格式化
     # ISO-8601 date format
@@ -687,7 +709,7 @@ post:
     # 显示更新日期
     # Show update date
     update_date:
-      enable: false
+      enable: true
       format: "LL"
 
   # 文章底部上一篇下一篇功能
@@ -747,11 +769,11 @@ post:
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: disqus
+    type: giscus
 
 
 #---------------------------
@@ -897,10 +919,10 @@ cusdis:
 # Based on GitHub Discussions, similar to Utterances
 # See: https://giscus.app/
 giscus:
-  repo:
-  repo-id:
-  category:
-  category-id:
+  repo: Tomcxwy/hexo-blog
+  repo-id: R_kgDOQtAMiA
+  category: Announcements
+  category-id: DIC_kwDOQtAMiM4C0IDE
   theme-light: light
   theme-dark: dark
   mapping: pathname
