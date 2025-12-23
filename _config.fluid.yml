@@ -255,12 +255,12 @@ custom_html: |
     id="2829883282"
     fixed="true"
     mini="true"
-    autoplay="true"
+    autoplay="false"
     theme="#29d"
     list-folded="true"
     volume="0.5"
     order="random"      # <--- 添加这一行实现随机播放
-    loop="all"          # 建议同时设置循环模式为全部循环>
+    loop="all"          # 同时设置循环模式为全部循环>
   </meting-js>
 
 # 网页访问统计
@@ -508,7 +508,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img:
+  banner_img: /img/transparent.png
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
