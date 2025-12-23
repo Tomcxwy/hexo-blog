@@ -17,6 +17,7 @@ index_img: /img/hello-world.png
 tags: 
   - hello
   - world
+category_bar: true
 #分类
 categories: ["杂七杂八"]
 #文章页背景图
