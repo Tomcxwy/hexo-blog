@@ -1,0 +1,12 @@
+/* 让主要内容的面板背景带一点点透明，能透出后面的粒子 */
+.board {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+/* 暗色模式下的面板透明度 */
+[data-user-color-scheme="dark"] .board {
+    background-color: rgba(37, 45, 56, 0.8) !important;
+}
+/*!* 隐藏首页 Banner 的默认背景，确保能看到 Canvas *!*/
+/*#banner {*/
+/*    background: transparent !important;*/
+/*}*/

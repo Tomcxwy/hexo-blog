@@ -2,7 +2,9 @@
 title: 部署Springboot+Vue项目
 date: 2025-12-22 15:37:38
 tags:
+  - 项目部署
 excerpt: cloudeflare+Render+Railway实现全免费部署Springboot+Vue+Mysql项目(ps:性能较差，只能用于测试)
+categories: ["疑难杂症"]
 ---
 # Cloudeflare+Render+Railway全免费部署
 

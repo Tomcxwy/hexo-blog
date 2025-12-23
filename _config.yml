@@ -5,7 +5,7 @@
 # Site
 title: 心有猛虎
 subtitle: '细嗅蔷薇'
-description: ''
+description: '正在搬砖的开发者'
 keywords:
 author: Tomcat
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://localhost:4000
+url: http://blog.tomcxwy.top
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
