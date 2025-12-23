@@ -235,9 +235,10 @@ font:
 # Specify the path of your custom js file, support list. The path is relative to the source directory, such as `/js/custom.js` corresponding to the directory `source/js/custom.js`
 # 1. 外部脚本放入 custom_js，确保它们在全局作用域加载
 custom_js:
-  - /js/particle-bg.js  # 添加这一行
+  - /js/particle-bg.js
   - https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
   - https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js
+  - /js/music-player-control.js  # 添加控制播放器的JS文件
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
@@ -249,19 +250,22 @@ custom_css:
 # 在页面底部注入播放器所需的资源
 # 3. custom_html 只保留播放器载体，且我们需要给它增加一层防销毁处理
 custom_html: |
-  <meting-js
-    server="netease"
-    type="playlist"
-    id="2829883282"
-    fixed="true"
-    mini="true"
-    autoplay="false"
-    theme="#29d"
-    list-folded="true"
-    volume="0.5"
-    order="random"      # <--- 添加这一行实现随机播放
-    loop="all"          # 同时设置循环模式为全部循环>
-  </meting-js>
+  <div id="global-music-player">
+    <meting-js
+      server="netease"
+      type="playlist"
+      id="2829883282"
+      fixed="true"
+      mini="true"
+      autoplay="false"
+      theme="#29d"
+      list-folded="true"
+      volume="0.5"
+      order="random"
+      loop="all">
+    </meting-js>
+  </div>
+
 
 # 网页访问统计
 # Analysis of website visitors

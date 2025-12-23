@@ -6,7 +6,11 @@
 [data-user-color-scheme="dark"] .board {
     background-color: rgba(37, 45, 56, 0.8) !important;
 }
-/*!* 隐藏首页 Banner 的默认背景，确保能看到 Canvas *!*/
-/*#banner {*/
-/*    background: transparent !important;*/
-/*}*/
+
+/* 音乐页面隐藏播放器 */
+body.music-page #global-music-player {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: translateY(100px) !important;
+}
