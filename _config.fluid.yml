@@ -952,9 +952,9 @@ discuss:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/背景图.png
+  banner_img: /img/波妞.png
   banner_img_height: 60
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0
 
 
 #---------------------------
@@ -963,9 +963,9 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: /img/背景图.png
+  banner_img: /img/蜘蛛侠.png
   banner_img_height: 60
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0
 
   # 分类的排序字段，前面带减号是倒序，不带减号是正序
   # Sort field for categories, with a minus sign is reverse order
@@ -992,9 +992,9 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: /img/背景图.png
+  banner_img: /img/山.png
   banner_img_height: 80
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0
   tagcloud:
     min_font: 25
     max_font: 40
@@ -1009,9 +1009,9 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/背景图.png
+  banner_img: /img/云.png
   banner_img_height: 60
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0
   avatar: /img/avatar_tom.png
   name: "Tomcat"
   intro: "正在搬砖的开发者"
