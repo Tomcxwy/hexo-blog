@@ -4,7 +4,6 @@ date: 2025-12-22 15:43:09
 tags:
   - cloudflare
 excerpt: 用cloudflare tunnel打通隧道代理本机webdav
-index_img: https://cdn.jsdelivr.net/gh/Tomcxwy/blog-images/img/tunnel.png
 categories: ["疑难杂症"]
 ---
 openlist已经搭建好webdav 端口号为127.0.0.1:1314
