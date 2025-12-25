@@ -5,7 +5,7 @@ tag:
   - git
 excerpt: 一些git的常用命令
 #文章在首页的封面图
-index_img: /img/git.png
+index_img: https://cdn.jsdelivr.net/gh/Tomcxwy/blog-images/img/git.png
 categories: ["常用命令"]
 ---
 # Git的一些常用命令

@@ -11,7 +11,7 @@ archive: false
 #当文章设置了 sticky 后，主题会默认在首页文章标题前增加一个图标，来标识这是一个置顶文章，可以通过主题配置去关闭或修改这个功能
 sticky: 100
 #文章在首页的封面图
-index_img: /img/hello-world.png
+index_img: https://cdn.jsdelivr.net/gh/Tomcxwy/blog-images/img/hello-world.png
 #标签
 #tags: ["初始","hello-world"]
 tags: 

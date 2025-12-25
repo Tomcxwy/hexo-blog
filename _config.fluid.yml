@@ -401,7 +401,7 @@ navbar:
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "音乐", link: "/music/", icon: "iconfont icon-music" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
-#    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -586,13 +586,13 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/背景图.png
+  banner_img: /img/云.png
   banner_img_height: 70
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0.1
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
-  default_index_img:
+  default_index_img: /img/tom.png
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -1035,7 +1035,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: /img/背景图.png
+  banner_img: /img/云.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -1046,7 +1046,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: /img/背景图.png
+  banner_img: /img/云.png
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)
@@ -1060,7 +1060,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/背景图.png
+  banner_img: /img/云.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
