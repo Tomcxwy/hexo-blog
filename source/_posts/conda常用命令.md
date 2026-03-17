@@ -6,6 +6,7 @@ tags:
 excerpt: 一些conda的常用命令
 index_img: https://cdn.jsdelivr.net/gh/Tomcxwy/blog-images/img/conda.png
 categories: ["常用命令"]
+sticky: 80
 ---
 # 环境管理
 
