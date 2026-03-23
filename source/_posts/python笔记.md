@@ -3,7 +3,7 @@ title: python笔记
 date: 2026-03-23 10:12:22
 tags:
   - python
-expert: python笔记
+excerpt: python笔记
 ---
 # python元组
 `a = (1,2,3)`
