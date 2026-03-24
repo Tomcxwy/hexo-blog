@@ -2,7 +2,7 @@
 title: 音乐
 date: 2025-12-23 12:19:25
 layout: page
-banner_img: /img/浪.png
+banner_img: /img/云.png
 ---
 {% meting "2829883282" "netease" "playlist"
    "theme:#3F51B5"
